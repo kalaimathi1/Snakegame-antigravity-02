@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake - Cyberpunk Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="ui-panel">
+            <div class="score-box">
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-box">
+                <span class="label">HIGH SCORE</span>
+                <span id="high-score">0</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="overlay" id="start-screen">
+            <h1>NEON SNAKE</h1>
+            <p>Press Any Key to Start</p>
+            <div class="controls-hint">Use Arrow Keys or WASD to Move</div>
+        </div>
+
+        <div class="overlay hidden" id="game-over-screen">
+            <h1>GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
